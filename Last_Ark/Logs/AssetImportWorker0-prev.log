@@ -1,6 +1,6 @@
 Using pre-set license
 Built from '2022.3/staging' branch; Version is '2022.3.4f1 (35713cd46cd7) revision 3502396'; Using compiler version '192829333'; Build Type 'Release'
-OS: 'Windows 10  (10.0.19045) 64bit Core' Language: 'ko' Physical Memory: 16295 MB
+OS: 'Windows 11  (10.0.22000) 64bit Professional' Language: 'ko' Physical Memory: 16075 MB
 BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 1
 
 COMMAND LINE ARGUMENTS:
@@ -11,13 +11,13 @@ C:\Program Files\Unity\Hub\Editor\2022.3.4f1\Editor\Unity.exe
 -name
 AssetImportWorker0
 -projectPath
-C:/Users/user/OneDrive/문서/GitHub/Last_Ark/Last_Ark
+C:/Users/ASUS/Documents/GitHub/Last_Ark/Last_Ark
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-59678
-Successfully changed project path to: C:/Users/user/OneDrive/문서/GitHub/Last_Ark/Last_Ark
-C:/Users/user/OneDrive/문서/GitHub/Last_Ark/Last_Ark
+57883
+Successfully changed project path to: C:/Users/ASUS/Documents/GitHub/Last_Ark/Last_Ark
+C:/Users/ASUS/Documents/GitHub/Last_Ark/Last_Ark
 [UnityMemory] Configuration Parameters - Can be set up in boot.config
     "memorysetup-bucket-allocator-granularity=16"
     "memorysetup-bucket-allocator-bucket-count=8"
@@ -49,64 +49,73 @@ C:/Users/user/OneDrive/문서/GitHub/Last_Ark/Last_Ark
     "memorysetup-temp-allocator-size-cloud-worker=32768"
     "memorysetup-temp-allocator-size-gi-baking-worker=262144"
     "memorysetup-temp-allocator-size-gfx=262144"
-Player connection [18700] Host "[IP] 192.168.45.241 [Port] 0 [Flags] 2 [Guid] 2760168046 [EditorId] 2760168046 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-VIOIUM6) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
+Player connection [24764] Host "[IP] 10.101.31.21 [Port] 0 [Flags] 2 [Guid] 662204189 [EditorId] 662204189 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-LREO4EJ) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
 
-Player connection [18700] Host "[IP] 192.168.45.241 [Port] 0 [Flags] 2 [Guid] 2760168046 [EditorId] 2760168046 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-VIOIUM6) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
+Player connection [24764] Host "[IP] 10.101.31.21 [Port] 0 [Flags] 2 [Guid] 662204189 [EditorId] 662204189 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-LREO4EJ) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
 
-Refreshing native plugins compatible for Editor in 15.28 ms, found 4 plugins.
+Refreshing native plugins compatible for Editor in 25.83 ms, found 4 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2022.3.4f1 (35713cd46cd7)
 [Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2022.3.4f1/Editor/Data/Resources/UnitySubsystems
-[Subsystems] Discovering subsystems at path C:/Users/user/OneDrive/문서/GitHub/Last_Ark/Last_Ark/Assets
+[Subsystems] Discovering subsystems at path C:/Users/ASUS/Documents/GitHub/Last_Ark/Last_Ark/Assets
 GfxDevice: creating device client; threaded=0; jobified=0
 Direct3D:
     Version:  Direct3D 11.0 [level 11.1]
-    Renderer: NVIDIA GeForce RTX 3060 (ID=0x2503)
+    Renderer: NVIDIA GeForce RTX 3050 Laptop GPU (ID=0x25a2)
     Vendor:   NVIDIA
-    VRAM:     12129 MB
-    Driver:   31.0.15.3179
+    VRAM:     3991 MB
+    Driver:   31.0.15.1659
 Initialize mono
 Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2022.3.4f1/Editor/Data/Managed'
 Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2022.3.4f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
 Mono config path = 'C:/Program Files/Unity/Hub/Editor/2022.3.4f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56908
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56924
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2022.3.4f1/Editor/Data/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2022.3.4f1/Editor/Data/PlaybackEngines/AndroidPlayer/UnityEditor.Android.Extensions.dll
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2022.3.4f1/Editor/Data/PlaybackEngines/iOSSupport/UnityEditor.iOS.Extensions.dll
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2022.3.4f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.012593 seconds.
-- Loaded All Assemblies, in  0.438 seconds
+Registered in 0.029233 seconds.
+- Loaded All Assemblies, in  0.642 seconds
 Native extension for WindowsStandalone target not found
+[usbmuxd] Start listen thread
+[usbmuxd] Listen thread started
+Native extension for iOS target not found
+Native extension for Android target not found
+Android Extension - Scanning For ADB Devices 3722 ms
+Native extension for WebGL target not found
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  0.363 seconds
-Domain Reload Profiling: 799ms
-	BeginReloadAssembly (116ms)
+- Finished resetting the current domain, in  4.306 seconds
+Domain Reload Profiling: 4943ms
+	BeginReloadAssembly (178ms)
 		ExecutionOrderSort (0ms)
 		DisableScriptedObjects (0ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
 		CreateAndSetChildDomain (1ms)
-	RebuildCommonClasses (45ms)
-	RebuildNativeTypeToScriptingClass (12ms)
-	initialDomainReloadingComplete (76ms)
-	LoadAllAssembliesAndSetupDomain (186ms)
-		LoadAssemblies (113ms)
+	RebuildCommonClasses (61ms)
+	RebuildNativeTypeToScriptingClass (11ms)
+	initialDomainReloadingComplete (126ms)
+	LoadAllAssembliesAndSetupDomain (262ms)
+		LoadAssemblies (174ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (173ms)
-			TypeCache.Refresh (171ms)
-				TypeCache.ScanAssembly (156ms)
+		AnalyzeDomain (246ms)
+			TypeCache.Refresh (245ms)
+				TypeCache.ScanAssembly (222ms)
 			ScanForSourceGeneratedMonoScriptInfo (1ms)
 			ResolveRequiredComponents (1ms)
-	FinalizeReload (364ms)
+	FinalizeReload (4306ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (288ms)
+		SetupLoadedEditorAssemblies (4219ms)
 			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (12ms)
-			SetLoadedEditorAssemblies (8ms)
+			InitializePlatformSupportModulesInManaged (3927ms)
+			SetLoadedEditorAssemblies (9ms)
 			RefreshPlugins (0ms)
-			BeforeProcessingInitializeOnLoad (3ms)
-			ProcessInitializeOnLoadAttributes (192ms)
-			ProcessInitializeOnLoadMethodAttributes (72ms)
+			BeforeProcessingInitializeOnLoad (4ms)
+			ProcessInitializeOnLoadAttributes (177ms)
+			ProcessInitializeOnLoadMethodAttributes (102ms)
 			AfterProcessingInitializeOnLoad (0ms)
 			EditorAssembliesLoaded (0ms)
 		ExecutionOrderSort2 (0ms)
@@ -114,54 +123,78 @@ Domain Reload Profiling: 799ms
 ========================================================================
 Worker process is ready to serve import requests
 Begin MonoManager ReloadAssembly
-Symbol file LoadedFromMemory doesn't match image C:\Users\user\OneDrive\문서\GitHub\Last_Ark\Last_Ark\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
-Symbol file LoadedFromMemory doesn't match image C:\Users\user\OneDrive\문서\GitHub\Last_Ark\Last_Ark\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
-- Loaded All Assemblies, in  1.065 seconds
-Refreshing native plugins compatible for Editor in 7.41 ms, found 4 plugins.
+Symbol file LoadedFromMemory doesn't match image C:\Users\ASUS\Documents\GitHub\Last_Ark\Last_Ark\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image C:\Users\ASUS\Documents\GitHub\Last_Ark\Last_Ark\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+- Loaded All Assemblies, in  1.767 seconds
+Refreshing native plugins compatible for Editor in 18.85 ms, found 4 plugins.
 Native extension for WindowsStandalone target not found
+Native extension for iOS target not found
+Native extension for Android target not found
+Native extension for WebGL target not found
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  0.684 seconds
-Domain Reload Profiling: 1743ms
-	BeginReloadAssembly (185ms)
+- Finished resetting the current domain, in  1.342 seconds
+Domain Reload Profiling: 3099ms
+	BeginReloadAssembly (301ms)
 		ExecutionOrderSort (0ms)
-		DisableScriptedObjects (6ms)
+		DisableScriptedObjects (13ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (23ms)
-	RebuildCommonClasses (47ms)
-	RebuildNativeTypeToScriptingClass (13ms)
-	initialDomainReloadingComplete (58ms)
-	LoadAllAssembliesAndSetupDomain (755ms)
-		LoadAssemblies (432ms)
+		CreateAndSetChildDomain (42ms)
+	RebuildCommonClasses (92ms)
+	RebuildNativeTypeToScriptingClass (21ms)
+	initialDomainReloadingComplete (110ms)
+	LoadAllAssembliesAndSetupDomain (1231ms)
+		LoadAssemblies (714ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (420ms)
-			TypeCache.Refresh (388ms)
-				TypeCache.ScanAssembly (366ms)
-			ScanForSourceGeneratedMonoScriptInfo (24ms)
-			ResolveRequiredComponents (8ms)
-	FinalizeReload (685ms)
+		AnalyzeDomain (654ms)
+			TypeCache.Refresh (567ms)
+				TypeCache.ScanAssembly (535ms)
+			ScanForSourceGeneratedMonoScriptInfo (69ms)
+			ResolveRequiredComponents (18ms)
+	FinalizeReload (1343ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (457ms)
+		SetupLoadedEditorAssemblies (973ms)
 			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (10ms)
-			SetLoadedEditorAssemblies (8ms)
+			InitializePlatformSupportModulesInManaged (107ms)
+			SetLoadedEditorAssemblies (6ms)
 			RefreshPlugins (0ms)
-			BeforeProcessingInitializeOnLoad (88ms)
-			ProcessInitializeOnLoadAttributes (300ms)
-			ProcessInitializeOnLoadMethodAttributes (41ms)
-			AfterProcessingInitializeOnLoad (10ms)
-			EditorAssembliesLoaded (0ms)
+			BeforeProcessingInitializeOnLoad (161ms)
+			ProcessInitializeOnLoadAttributes (600ms)
+			ProcessInitializeOnLoadMethodAttributes (77ms)
+			AfterProcessingInitializeOnLoad (23ms)
+			EditorAssembliesLoaded (1ms)
 		ExecutionOrderSort2 (0ms)
-		AwakeInstancesAfterBackupRestoration (13ms)
-Launched and connected shader compiler UnityShaderCompiler.exe after 0.10 seconds
-Refreshing native plugins compatible for Editor in 8.64 ms, found 4 plugins.
+		AwakeInstancesAfterBackupRestoration (28ms)
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.16 seconds
+Refreshing native plugins compatible for Editor in 15.69 ms, found 4 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 4070 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 71 unused Assets / (244.5 KB). Loaded Objects now: 4532.
-Memory consumption went from 144.3 MB to 144.0 MB.
-Total: 4.255100 ms (FindLiveObjects: 0.342500 ms CreateObjectMapping: 0.411400 ms MarkObjects: 3.275400 ms  DeleteObjects: 0.224700 ms)
+Unloading 4071 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 71 unused Assets / (244.6 KB). Loaded Objects now: 4536.
+Memory consumption went from 149.3 MB to 149.1 MB.
+Total: 7.337900 ms (FindLiveObjects: 0.569700 ms CreateObjectMapping: 0.475100 ms MarkObjects: 5.719500 ms  DeleteObjects: 0.571700 ms)
 
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Refreshing native plugins compatible for Editor in 16.33 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 7 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 7 unused Assets / (198.5 KB). Loaded Objects now: 4536.
+Memory consumption went from 82.1 MB to 81.9 MB.
+Total: 5.496300 ms (FindLiveObjects: 0.456900 ms CreateObjectMapping: 0.358700 ms MarkObjects: 4.440600 ms  DeleteObjects: 0.238800 ms)
+
+Prepare: number of updated asset objects reloaded= 0
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
   custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
@@ -176,33 +209,515 @@ AssetImportParameters requested are different than current active one (requested
   custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
 Received Import Request.
-  Time since last request: 779023.659776 seconds.
-  path: Assets/Music File/Balloon .wav
-  artifactKey: Guid(ed815f2c9d984d341aede864f58e6990) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Music File/Balloon .wav using Guid(ed815f2c9d984d341aede864f58e6990) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cb0cb810dda62452c24f654558749a87') in 0.115869 seconds
+  Time since last request: 23545.759820 seconds.
+  path: Assets/Gameplay Casual Sounds/MISC/Cards Place 1_05.wav
+  artifactKey: Guid(d960f90ac8097fe4093040967b4e3fa4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Gameplay Casual Sounds/MISC/Cards Place 1_05.wav using Guid(d960f90ac8097fe4093040967b4e3fa4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4bec309a37e11f99481a4ecaa5b8bf4e') in 0.153180 seconds
 Number of updated asset objects reloaded before import = 0
 Number of asset objects unloaded after import = 2
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000034 seconds.
-  path: Assets/Music File/Adventure.wav
-  artifactKey: Guid(4ec4d86023c18bc4c9007e6ee088d7b2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Music File/Adventure.wav using Guid(4ec4d86023c18bc4c9007e6ee088d7b2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '31519e4855b91f960f23dd22813a89af') in 0.015101 seconds
+  Time since last request: 4.047128 seconds.
+  path: Assets/Gameplay Casual Sounds/MISC/Book Page 1.wav
+  artifactKey: Guid(98615ad4dcd54cf4988e755a5ff6032d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Gameplay Casual Sounds/MISC/Book Page 1.wav using Guid(98615ad4dcd54cf4988e755a5ff6032d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ab7510dfc753c09e4d7bcbe74f89a77a') in 0.024275 seconds
 Number of updated asset objects reloaded before import = 0
 Number of asset objects unloaded after import = 2
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000019 seconds.
-  path: Assets/Music File/Bobble Bobble .wav
-  artifactKey: Guid(a506bcf2841624b4f84900ff836f57ce) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Music File/Bobble Bobble .wav using Guid(a506bcf2841624b4f84900ff836f57ce) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3aba201285695b432f622397fcb5b30d') in 0.014169 seconds
+  Time since last request: 5.598175 seconds.
+  path: Assets/Gameplay Casual Sounds/Pops/Pop 5.wav
+  artifactKey: Guid(2ef1da46045ba00429703aae4ca4fd2b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Gameplay Casual Sounds/Pops/Pop 5.wav using Guid(2ef1da46045ba00429703aae4ca4fd2b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c18218257afe16e653c9e745d944ac99') in 0.023174 seconds
 Number of updated asset objects reloaded before import = 0
 Number of asset objects unloaded after import = 2
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000015 seconds.
-  path: Assets/Music File/Dream .wav
-  artifactKey: Guid(1a14a7a908d86774090b6615fbe12f31) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Music File/Dream .wav using Guid(1a14a7a908d86774090b6615fbe12f31) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c892c05220ccdcc117ca12ea8c5a40fc') in 0.018003 seconds
+  Time since last request: 109.977564 seconds.
+  path: Assets/Witching Hour/songs
+  artifactKey: Guid(935aef94359ecc947893415115367f46) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Witching Hour/songs using Guid(935aef94359ecc947893415115367f46) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '90a43e005d80c6b4f24f89eadf0ff249') in 0.001624 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 2.285524 seconds.
+  path: Assets/Witching Hour/songs/A Silver Lining.wav
+  artifactKey: Guid(b0ca821aeb2062c42b2f0740c48fcefa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Witching Hour/songs/A Silver Lining.wav using Guid(b0ca821aeb2062c42b2f0740c48fcefa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3b72fd31a2e31336a8c275091218f1bc') in 0.030360 seconds
 Number of updated asset objects reloaded before import = 0
 Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 20.886386 seconds.
+  path: Assets/Witching Hour/songs/Blood Moon.wav
+  artifactKey: Guid(df2e2862ff3021841939b3c5c1ee7401) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Witching Hour/songs/Blood Moon.wav using Guid(df2e2862ff3021841939b3c5c1ee7401) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '740feb2483d5c8fc016a545abfc1e02e') in 0.027280 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 7.030637 seconds.
+  path: Assets/Witching Hour/songs/Witching Hour.wav
+  artifactKey: Guid(dee837480d8e3404591ec834e4ad24c6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Witching Hour/songs/Witching Hour.wav using Guid(dee837480d8e3404591ec834e4ad24c6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '64da5ebb079998f23efbf81462ab8c98') in 0.032364 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 69.947482 seconds.
+  path: Assets/Witching Hour/songs/Viridian.wav
+  artifactKey: Guid(c42d3b82f33a0f74fb692bfcc190e336) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Witching Hour/songs/Viridian.wav using Guid(c42d3b82f33a0f74fb692bfcc190e336) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cb86b7e2682b57d6c48a7438f0f3bc52') in 0.025367 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 20.978580 seconds.
+  path: Assets/Witching Hour/songs/Until Then.wav
+  artifactKey: Guid(e4989f8cd570085418e0b864c6f4140d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Witching Hour/songs/Until Then.wav using Guid(e4989f8cd570085418e0b864c6f4140d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '012d5f996d4b3091737ea4c688d53ee9') in 0.028429 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 13.772955 seconds.
+  path: Assets/Witching Hour/songs/Solitude.wav
+  artifactKey: Guid(038f60ffaa447384d9a114635a96b438) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Witching Hour/songs/Solitude.wav using Guid(038f60ffaa447384d9a114635a96b438) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '49e6ed1d8bf63758820f355eac0f14e4') in 0.023539 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 4.711502 seconds.
+  path: Assets/Witching Hour/songs/New World.wav
+  artifactKey: Guid(70bda92b17ec8294596d03c75727c669) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Witching Hour/songs/New World.wav using Guid(70bda92b17ec8294596d03c75727c669) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '728e5bd1ea45ff267a7573f82e8909a9') in 0.021132 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 27.089561 seconds.
+  path: Assets/Witching Hour/songs/Nebula.wav
+  artifactKey: Guid(4bf71967a981b38449186f61a7e6341a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Witching Hour/songs/Nebula.wav using Guid(4bf71967a981b38449186f61a7e6341a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd6c3c7406538c6efc302b9178bdedfb7') in 0.027890 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 20.437513 seconds.
+  path: Assets/Witching Hour/songs/Limbo.wav
+  artifactKey: Guid(a9ffcc400ee503c44a415cff098f219d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Witching Hour/songs/Limbo.wav using Guid(a9ffcc400ee503c44a415cff098f219d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'eb04d327ecdc2e34b9920ff35988edfa') in 0.027018 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 18.375164 seconds.
+  path: Assets/Witching Hour/loops/Chronos - Loop_1.wav
+  artifactKey: Guid(62d654b0fc344ca4d9342feb2a55341b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Witching Hour/loops/Chronos - Loop_1.wav using Guid(62d654b0fc344ca4d9342feb2a55341b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0bd5eb9c8245783f13e9ac8767ebd109') in 0.025491 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 9.302808 seconds.
+  path: Assets/Witching Hour/loops/Nebula - Loop_3.wav
+  artifactKey: Guid(a15de75eac74e334aa8d352fa4cd0a83) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Witching Hour/loops/Nebula - Loop_3.wav using Guid(a15de75eac74e334aa8d352fa4cd0a83) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6c6aa05f1c1d11cbd322b988366cec14') in 0.028778 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 1.848837 seconds.
+  path: Assets/Witching Hour/loops/Until Then - Loop_1.wav
+  artifactKey: Guid(fb64faac922dd6a4b8cd1b7b92de128e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Witching Hour/loops/Until Then - Loop_1.wav using Guid(fb64faac922dd6a4b8cd1b7b92de128e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9ac90248d4358522253f48d89678f9a7') in 0.030822 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 4.529846 seconds.
+  path: Assets/Witching Hour/loops/Witching Hour - Loop_1.wav
+  artifactKey: Guid(d9e3c64229eddf64d842610f4db535a6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Witching Hour/loops/Witching Hour - Loop_1.wav using Guid(d9e3c64229eddf64d842610f4db535a6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4224360abf7b6e0e4aade3c98caf9e1c') in 0.022364 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 14.524825 seconds.
+  path: Assets/Witching Hour/loops/Viridian - Loop_3.wav
+  artifactKey: Guid(49272992dffedf548b4c93b0c0f45501) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Witching Hour/loops/Viridian - Loop_3.wav using Guid(49272992dffedf548b4c93b0c0f45501) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c438175f0f8efd09872224f2f51f31b5') in 0.030951 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 1.126724 seconds.
+  path: Assets/Witching Hour/loops/Witching Hour - Loop_2.wav
+  artifactKey: Guid(a2573d2a0e1ceb64aa4769ef64a10256) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Witching Hour/loops/Witching Hour - Loop_2.wav using Guid(a2573d2a0e1ceb64aa4769ef64a10256) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '38c919792b82e3eec9c6a0ba6ff52d00') in 0.030760 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 3.950857 seconds.
+  path: Assets/Witching Hour/loops/Witching Hour - Loop_3.wav
+  artifactKey: Guid(c186433197a6acc4099ab744835b3dc4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Witching Hour/loops/Witching Hour - Loop_3.wav using Guid(c186433197a6acc4099ab744835b3dc4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5a518da0a27aa94b78509d532ce70e75') in 0.024268 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 63.075496 seconds.
+  path: Assets/Gameplay Casual Sounds/MISC/Boing.wav
+  artifactKey: Guid(61abda927ea33bb4e92e6dc282825612) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Gameplay Casual Sounds/MISC/Boing.wav using Guid(61abda927ea33bb4e92e6dc282825612) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e592935fc3779285158afb20dec35a7c') in 0.026928 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 1.402331 seconds.
+  path: Assets/Gameplay Casual Sounds/MISC/Car Door 1.wav
+  artifactKey: Guid(57a8ad67af30d3f4e8070b401f37195b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Gameplay Casual Sounds/MISC/Car Door 1.wav using Guid(57a8ad67af30d3f4e8070b401f37195b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cc871c7a80107e16e7cbf2df07f7e960') in 0.024151 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 21.833630 seconds.
+  path: Assets/Gameplay Casual Sounds/MISC/Car Door 2.wav
+  artifactKey: Guid(9c80d0eaf9b429f44af82d46bc66a4c4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Gameplay Casual Sounds/MISC/Car Door 2.wav using Guid(9c80d0eaf9b429f44af82d46bc66a4c4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '57b6d80594e0abcd5bec46619070defd') in 0.024252 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 13.695749 seconds.
+  path: Assets/Gameplay Casual Sounds/MISC/Card Draw 1_1.wav
+  artifactKey: Guid(4a7bf7c894c216a4fb6fbad3f0617566) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Gameplay Casual Sounds/MISC/Card Draw 1_1.wav using Guid(4a7bf7c894c216a4fb6fbad3f0617566) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '873c089ab2181c422a0ed0bc16720b21') in 0.024110 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 7.251697 seconds.
+  path: Assets/Gameplay Casual Sounds/MISC/Card Draw 3_1.wav
+  artifactKey: Guid(a9b815a0897d5e943b0efcc0e55787b1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Gameplay Casual Sounds/MISC/Card Draw 3_1.wav using Guid(a9b815a0897d5e943b0efcc0e55787b1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd5854c7d59239c18720443881750d892') in 0.022084 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 7.403083 seconds.
+  path: Assets/Gameplay Casual Sounds/MISC/Cards Place 2_5.wav
+  artifactKey: Guid(8455fff1f910b42419f778813c8c75a0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Gameplay Casual Sounds/MISC/Cards Place 2_5.wav using Guid(8455fff1f910b42419f778813c8c75a0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '55f740d6881f5ea54b9191ff4cf85da1') in 0.028709 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 3.943426 seconds.
+  path: Assets/Gameplay Casual Sounds/MISC/Countdown 5.wav
+  artifactKey: Guid(c38ff8a31075abb468d1d01bb9447a31) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Gameplay Casual Sounds/MISC/Countdown 5.wav using Guid(c38ff8a31075abb468d1d01bb9447a31) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '24c7ee835a652354ddbc1ba421c5b05e') in 0.023351 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 4.208911 seconds.
+  path: Assets/Gameplay Casual Sounds/MISC/Dice Shake 2_5.wav
+  artifactKey: Guid(167dbd3e2769e154e865cfa685b88e2e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Gameplay Casual Sounds/MISC/Dice Shake 2_5.wav using Guid(167dbd3e2769e154e865cfa685b88e2e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7a39aced1d3bb15c0ff5a2f630e8c6be') in 0.023388 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.596284 seconds.
+  path: Assets/Gameplay Casual Sounds/MISC/Dice Multiple 1_01.wav
+  artifactKey: Guid(f56c3dc35d01f814c95df46e411228a0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Gameplay Casual Sounds/MISC/Dice Multiple 1_01.wav using Guid(f56c3dc35d01f814c95df46e411228a0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c6eb4f3786ea054766abce0fd387f970') in 0.031444 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 2.697454 seconds.
+  path: Assets/Gameplay Casual Sounds/MISC/Dice Multiple 2_1.wav
+  artifactKey: Guid(e9170707ce83b6e4187bc3ee0a56cac1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Gameplay Casual Sounds/MISC/Dice Multiple 2_1.wav using Guid(e9170707ce83b6e4187bc3ee0a56cac1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '323ac43d83ec434448405849206ca08f') in 0.022987 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 4.743607 seconds.
+  path: Assets/Gameplay Casual Sounds/MISC/Dice Single 1_1.wav
+  artifactKey: Guid(29cc5a2073667be4dac401686f9873ee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Gameplay Casual Sounds/MISC/Dice Single 1_1.wav using Guid(29cc5a2073667be4dac401686f9873ee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '98fc70873e1afaad248c8e65938a652e') in 0.023879 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 2.638239 seconds.
+  path: Assets/Gameplay Casual Sounds/MISC/Drum Roll 1.wav
+  artifactKey: Guid(c43c1bc8761601745a0668013d8a280c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Gameplay Casual Sounds/MISC/Drum Roll 1.wav using Guid(c43c1bc8761601745a0668013d8a280c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c3184bb0eebc809064069797b09f23a2') in 0.024578 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 484.102432 seconds.
+  path: Assets/Witching Hour/loops/Viridian - Loop_1.wav
+  artifactKey: Guid(272d03d0b5d0778488ac3c6442d14394) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Witching Hour/loops/Viridian - Loop_1.wav using Guid(272d03d0b5d0778488ac3c6442d14394) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1c4cb1b2dc3c3d4e2812b0b48203a207') in 0.022479 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 15.450808 seconds.
+  path: Assets/Witching Hour/loops/Viridian - Loop _4.wav
+  artifactKey: Guid(7c4ef4a735014cc46ae767eabb7a37f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Witching Hour/loops/Viridian - Loop _4.wav using Guid(7c4ef4a735014cc46ae767eabb7a37f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '31b3fc58120203b68045476d593b2c9f') in 0.027005 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 2.399198 seconds.
+  path: Assets/Witching Hour/loops/Until Then - Loop_2.wav
+  artifactKey: Guid(e099d87c60254c342bd4eb3c378cc3be) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Witching Hour/loops/Until Then - Loop_2.wav using Guid(e099d87c60254c342bd4eb3c378cc3be) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '515981eb5065f55027e543c94613cc95') in 0.024866 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 7.323270 seconds.
+  path: Assets/Witching Hour/loops/New World - Loop_4.wav
+  artifactKey: Guid(d7e5f3413b23f544dae0dbc9064df753) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Witching Hour/loops/New World - Loop_4.wav using Guid(d7e5f3413b23f544dae0dbc9064df753) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2c6af397e08b0641769d65ebb075af05') in 0.025481 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.765823 seconds.
+  path: Assets/Witching Hour/loops/Solitude - Loop_1.wav
+  artifactKey: Guid(d06d7700a57c7ef4a8382f46b500a039) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Witching Hour/loops/Solitude - Loop_1.wav using Guid(d06d7700a57c7ef4a8382f46b500a039) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6e47988b43b399ec05fcf20885208b13') in 0.024114 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.686651 seconds.
+  path: Assets/Witching Hour/loops/Solitude - Loop_2.wav
+  artifactKey: Guid(35b5a809fab36da4bb51e9931f17e68e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Witching Hour/loops/Solitude - Loop_2.wav using Guid(35b5a809fab36da4bb51e9931f17e68e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7c3fcbeede1368174bc0cbb45b1ec2c4') in 0.018496 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 5.949170 seconds.
+  path: Assets/Witching Hour/loops/Solitude - Loop_3.wav
+  artifactKey: Guid(a11cfd6eb75059c4db5f76b2d9324e13) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Witching Hour/loops/Solitude - Loop_3.wav using Guid(a11cfd6eb75059c4db5f76b2d9324e13) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fc07307be92acb967aabe516b8e56a03') in 0.019153 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 25.395105 seconds.
+  path: Assets/Witching Hour/loops/New World - Loop_1.wav
+  artifactKey: Guid(666e5ff758a2a5f45befd8f00a1d0e6b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Witching Hour/loops/New World - Loop_1.wav using Guid(666e5ff758a2a5f45befd8f00a1d0e6b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b0b12f5410b2f3f4f28de9f98fe5434c') in 0.020110 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 23.722176 seconds.
+  path: Assets/Witching Hour/loops/Nebula - Loop_1.wav
+  artifactKey: Guid(328958a3f080a8a44981e5fd52d4aa4e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Witching Hour/loops/Nebula - Loop_1.wav using Guid(328958a3f080a8a44981e5fd52d4aa4e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e833ef7aa67f6e8ec23a22e526738b95') in 0.019814 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 12.756049 seconds.
+  path: Assets/Witching Hour/loops/Limbo - Loop_1.wav
+  artifactKey: Guid(91c46285c156aab4caaedb95683888ef) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Witching Hour/loops/Limbo - Loop_1.wav using Guid(91c46285c156aab4caaedb95683888ef) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1a5f2158a53319d76108689ff840fdad') in 0.018304 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 15.063250 seconds.
+  path: Assets/Witching Hour/loops/Dusk - Loop_1.wav
+  artifactKey: Guid(a8f26df25b6ff2443a92b9145b56794e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Witching Hour/loops/Dusk - Loop_1.wav using Guid(a8f26df25b6ff2443a92b9145b56794e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8177b9ebe4cbcbd93f6033068fca2fc7') in 0.018323 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 22.175984 seconds.
+  path: Assets/Witching Hour/loops/Chronos - Loop_2.wav
+  artifactKey: Guid(d0caef58b575191478a136cefe0c18c5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Witching Hour/loops/Chronos - Loop_2.wav using Guid(d0caef58b575191478a136cefe0c18c5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dce3206730594b45b93bdd5b23eaf8e3') in 0.021478 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 7.118771 seconds.
+  path: Assets/Witching Hour/loops/Chronos - Loop_3.wav
+  artifactKey: Guid(bd3f466ef1db0ec46902fcc79443ee10) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Witching Hour/loops/Chronos - Loop_3.wav using Guid(bd3f466ef1db0ec46902fcc79443ee10) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b6a7ad9e11ca818e38333a3a0cfe3e0a') in 0.018613 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 22.181650 seconds.
+  path: Assets/Witching Hour/loops/Chronos - Loop_4.wav
+  artifactKey: Guid(d8ce0b8b327334e41bf667098df70909) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Witching Hour/loops/Chronos - Loop_4.wav using Guid(d8ce0b8b327334e41bf667098df70909) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e35c1bc663780f0b26da5c2af83d441d') in 0.019092 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 116.241886 seconds.
+  path: Assets/Witching Hour/loops/A Silver Lining - Loop_1.wav
+  artifactKey: Guid(bd5abaedd5250e140a85060398851bcb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Witching Hour/loops/A Silver Lining - Loop_1.wav using Guid(bd5abaedd5250e140a85060398851bcb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '09d1ddc644be1d8c43af458a73672691') in 0.019171 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 6.217417 seconds.
+  path: Assets/Witching Hour/loops/A Silver Lining - Loop_2.wav
+  artifactKey: Guid(432e44c7f41c47f4fb87e28bfe6cac08) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Witching Hour/loops/A Silver Lining - Loop_2.wav using Guid(432e44c7f41c47f4fb87e28bfe6cac08) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3d1cc1c5170bd970027e0a83ab3b6079') in 0.018740 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 6.806098 seconds.
+  path: Assets/Witching Hour/loops/Blood Moon - Loop_1.wav
+  artifactKey: Guid(5a146a36b44d73e4bb94fbda259f04a2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Witching Hour/loops/Blood Moon - Loop_1.wav using Guid(5a146a36b44d73e4bb94fbda259f04a2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c44f98124682ad1f612762147452a03c') in 0.018130 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 25.114077 seconds.
+  path: Assets/Witching Hour/loops/Dusk - Loop_2.wav
+  artifactKey: Guid(7b9e4e6db0830044fb6e5f047f1ff548) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Witching Hour/loops/Dusk - Loop_2.wav using Guid(7b9e4e6db0830044fb6e5f047f1ff548) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e3caf475f9724bca891bf2f4281480ca') in 0.016834 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 10.405683 seconds.
+  path: Assets/Witching Hour/loops/Dusk - Loop_3.wav
+  artifactKey: Guid(9e2a8a625dba4a64287fd634ed75862e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Witching Hour/loops/Dusk - Loop_3.wav using Guid(9e2a8a625dba4a64287fd634ed75862e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '27243731038c1bc02fd19bca713f41e2') in 0.019480 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 147.456006 seconds.
+  path: Assets/Witching Hour/loops/Limbo - Loop_2.wav
+  artifactKey: Guid(e22bf54042b41bb47ba60719ee0c0876) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Witching Hour/loops/Limbo - Loop_2.wav using Guid(e22bf54042b41bb47ba60719ee0c0876) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '226a9061a9451afa599f478916112fc2') in 0.028300 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 28.624264 seconds.
+  path: Assets/Witching Hour/loops/Nebula - Loop_2.wav
+  artifactKey: Guid(33946162e7fa6cf4287ad4998bf36d98) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Witching Hour/loops/Nebula - Loop_2.wav using Guid(33946162e7fa6cf4287ad4998bf36d98) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f15b5e695ea50c7ca029247f78b7f21b') in 0.020772 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 44.659145 seconds.
+  path: Assets/Witching Hour/loops/New World - Loop_2.wav
+  artifactKey: Guid(142695355f2de5a4d8b95723613e5e9d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Witching Hour/loops/New World - Loop_2.wav using Guid(142695355f2de5a4d8b95723613e5e9d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b7a06f52aa51b1ffdc5765881b02851f') in 0.020752 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 5.602716 seconds.
+  path: Assets/Witching Hour/loops/New World - Loop_3.wav
+  artifactKey: Guid(eed2d1cb7b4a89f45b453f250af4549c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Witching Hour/loops/New World - Loop_3.wav using Guid(eed2d1cb7b4a89f45b453f250af4549c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5fddd762379049a27873e4b3a1cab744') in 0.019515 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 532.432955 seconds.
+  path: Assets/Witching Hour/loops/Until Then - Loop_4.wav
+  artifactKey: Guid(f4165ebf0e75f704bb068fee22ef90d3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Witching Hour/loops/Until Then - Loop_4.wav using Guid(f4165ebf0e75f704bb068fee22ef90d3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '024215de4fdf917c701eb573525cb4a6') in 0.021721 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Prepare
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image C:\Users\ASUS\Documents\GitHub\Last_Ark\Last_Ark\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image C:\Users\ASUS\Documents\GitHub\Last_Ark\Last_Ark\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+- Loaded All Assemblies, in 11.072 seconds
+Refreshing native plugins compatible for Editor in 13.83 ms, found 4 plugins.
+Native extension for WindowsStandalone target not found
+Native extension for iOS target not found
+Native extension for Android target not found
+Native extension for WebGL target not found
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in 18.330 seconds
+Domain Reload Profiling: 29397ms
+	BeginReloadAssembly (656ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (127ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (258ms)
+	RebuildCommonClasses (40ms)
+	RebuildNativeTypeToScriptingClass (11ms)
+	initialDomainReloadingComplete (45ms)
+	LoadAllAssembliesAndSetupDomain (10313ms)
+		LoadAssemblies (9944ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (484ms)
+			TypeCache.Refresh (476ms)
+				TypeCache.ScanAssembly (402ms)
+			ScanForSourceGeneratedMonoScriptInfo (1ms)
+			ResolveRequiredComponents (8ms)
+	FinalizeReload (18331ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (1054ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (75ms)
+			SetLoadedEditorAssemblies (5ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (320ms)
+			ProcessInitializeOnLoadAttributes (574ms)
+			ProcessInitializeOnLoadMethodAttributes (60ms)
+			AfterProcessingInitializeOnLoad (20ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (27ms)
+Refreshing native plugins compatible for Editor in 16.16 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 4051 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 43 unused Assets / (218.0 KB). Loaded Objects now: 4550.
+Memory consumption went from 144.1 MB to 143.9 MB.
+Total: 8.697900 ms (FindLiveObjects: 0.479400 ms CreateObjectMapping: 0.302000 ms MarkObjects: 7.630000 ms  DeleteObjects: 0.284800 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:CustomObjectIndexerAttribute: 756ad292c208cfabdd7b50bc23989ffe -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 

@@ -10,11 +10,12 @@ public class Click : MonoBehaviour
 {
     public RectTransform stampPanel, scriptPanel1;
     public GameObject acceptimg, ignoreimg;
-
+    public AudioSource stampsound;
     private void Start()
     {
         ignoreimg.SetActive(false);
         acceptimg.SetActive(false);
+        stampsound = GetComponent<AudioSource>();
     }
 
     void OnTriggerEnter2D(Collider2D other)
@@ -36,24 +37,23 @@ public class Click : MonoBehaviour
                 Clipboard.°ÅÀý();
                 
             }
+            stampsound.Play();
 
             Invoke("Boxback", 1f);
 
             if (other.gameObject.name.Equals("Script"))
             {
-                scriptPanel1.DOLocalMoveY(600, 2f).SetEase(Ease.InBack);
+                scriptPanel1.DOLocalMoveY(600, 1f).SetEase(Ease.InBack);
                 Invoke("Back1", 3f);
             }
 
-           
-            
         }
         
     }
 
     void Boxback()
     {
-        stampPanel.DOLocalMoveX(578, 2f).SetEase(Ease.InBack);
+        stampPanel.DOLocalMoveX(578, 1f).SetEase(Ease.InBack);
     }
 
     void Back1()

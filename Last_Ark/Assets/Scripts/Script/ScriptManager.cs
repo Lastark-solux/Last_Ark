@@ -13,11 +13,14 @@ public class ScriptManager : MonoBehaviour
     public static bool scriptscene = true, isChoiceDisplayed = false; //스크립트씬인거 확인하기, 화면클릭막기
     public static int count = 0, 선택지count = 0; //상소문 넘버 받아오기
 
-    public GameObject 스칼렛Image, 유진Image, 레이Image, 나Image;
+    public GameObject 스칼렛Image, 유진Image, 레이Image;
     public static string story = "sub1", person = "Character";
     public TextMeshProUGUI 선택지1, 선택지2, 선택지3;
     public GameObject 선택지버튼ob1, 선택지버튼ob2, 선택지버튼ob3;
     public Button 선택지bt1, 선택지bt2, 선택지bt3;
+
+    public bool gogoodendingok = false, gorealendingok = false;
+
 
 
     void Start()
@@ -29,7 +32,6 @@ public class ScriptManager : MonoBehaviour
         스칼렛Image.SetActive(false);
         유진Image.SetActive(false);
         레이Image.SetActive(false);
-        나Image.SetActive(false);
 
         선택지bt1 = GameObject.Find("선택지버튼1").GetComponent<Button>();
         선택지bt2 = GameObject.Find("선택지버튼2").GetComponent<Button>();
@@ -63,12 +65,11 @@ public class ScriptManager : MonoBehaviour
 
         if (story == data_Dialog[count]["story"].ToString()) //story 열 값이 바뀌지 않는다면
         {
-            if (person != data_Dialog[count]["person"].ToString()) //person열 값이 바뀐다면
+            if ((person != data_Dialog[count]["person"].ToString())||(count == 147)) //person열 값이 바뀐다면
             {
                 if (person == "스칼렛") 스칼렛Image.SetActive(false); //캐릭터 그림 사라지게
                 if (person == "유진") 유진Image.SetActive(false);
                 if (person == "레이") 레이Image.SetActive(false);
-                if (person == "나") 나Image.SetActive(false);
                 
                 person = data_Dialog[count]["person"].ToString(); //person 갱신
                 if (person == "나") 나Action();
@@ -80,9 +81,14 @@ public class ScriptManager : MonoBehaviour
         else
         {
             story = data_Dialog[count]["story"].ToString();
-            if (count != 50 && count != 93 && count != 159 && count != 290) 
-                //씬전환 방지, 버튼클릭 후 적용 
-                //ex: sub2-1의 첫번째
+            if((count == 324) || (count == 319)) 
+            {
+                if (gogoodendingok == true) SceneManager.LoadScene("GoodEnding");
+                else if (gorealendingok == true) SceneManager.LoadScene("RealEnding");
+            }
+            else if (count != 50 && count != 93 && count != 159 && count != 290)
+            //씬전환 방지, 버튼클릭 후 적용 
+            //ex: sub2-1의 첫번째
             {
                 count--;
                 scriptscene = false;
@@ -130,15 +136,11 @@ public class ScriptManager : MonoBehaviour
         {
             레이Image.SetActive(true);
         }
-        if (name == "나")
-        {
-            나Image.SetActive(true);
-        }
     }
 
     public void 나Action() //선택지 보이게 하는 함수
     {
-        Debug.Log("나액션시작");
+      
         List<Dictionary<string, object>> data_Dialog = CSVReader.Read("선택지");
         string choice1 = data_Dialog[선택지count]["choice1"].ToString();
         선택지1.text = choice1;
@@ -204,7 +206,7 @@ public class ScriptManager : MonoBehaviour
             {
                 story = "main2-1";
                 BtnAction();
-                //여기에 플래그 main2_1=True로 변경 넣으면 됨
+                Clipboard.main2_1 = true;
             });
             선택지bt2.onClick.RemoveAllListeners();
             선택지bt2.onClick.AddListener(() =>
@@ -232,12 +234,14 @@ public class ScriptManager : MonoBehaviour
                 story = "main4-1&3";
                 count = 320;
                 BtnAction();
+                gogoodendingok = true;
             });
             선택지bt2.onClick.RemoveAllListeners();
             선택지bt2.onClick.AddListener(() =>
             {
                 story = "main4-2";
                 BtnAction();
+                gorealendingok = true;
             });
             선택지bt3.onClick.RemoveAllListeners();
             선택지bt3.onClick.AddListener(() =>
@@ -245,6 +249,7 @@ public class ScriptManager : MonoBehaviour
                 story = "main4-1&3";
                 count = 320;
                 BtnAction();
+                gogoodendingok = true;
             });
         }
         else

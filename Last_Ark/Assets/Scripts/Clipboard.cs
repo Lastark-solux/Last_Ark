@@ -13,9 +13,7 @@ using System;
 
 using Random = UnityEngine.Random;
 using System.Linq;
-
-
-
+using JetBrains.Annotations;
 
 public class Clipboard : MonoBehaviour 
 {
@@ -61,6 +59,41 @@ public class Clipboard : MonoBehaviour
     public static bool 시간석1 = false;
     public static bool 시간석2 = false;
     public static bool 시간석3 = false;
+    public static bool 깬시간석1 = false;
+    public static bool 깬시간석2 = false;
+    public static bool 깬시간석3 = false;
+
+    // 뉴스 플래그
+    public static bool suc150 = false;
+    public static bool fail150 = false;
+    public static bool rej150 = false;
+    public static bool suc151 = false;
+    public static bool fail151 = false;
+    public static bool rej151 = false;
+    public static bool suc152 = false;
+    public static bool fail152 = false;
+    public static bool rej152 = false;
+    public static bool suc153 = false;
+    public static bool fail153 = false;
+    public static bool rej153 = false;
+    public static bool suc154 = false;
+    public static bool fail154 = false;
+    public static bool rej154 = false;
+    public static bool suc155 = false;
+    public static bool fail155 = false;
+    public static bool rej155 = false;
+    public static bool suc156 = false;
+    public static bool fail156 = false;
+    public static bool rej156 = false;
+    public static bool common1 = false;
+    public static bool common2 = false;
+    public static bool common3 = false;
+    public static bool 침식도엔딩 = false;
+    public static bool 인구엔딩 = false;
+    public static bool 식량엔딩 = false;
+    
+
+
 
 
 
@@ -77,15 +110,16 @@ public class Clipboard : MonoBehaviour
     public static bool isExit;
     
     public TextMeshProUGUI Scinfo1;
+    public GameObject 정무마치기버튼;
+   
    
 
 
 
 
 
-
-
-    public static float 실패확률 = 100 - UI.현희망;
+    //public static float 실패확률 = 100 - UI.현희망;
+    public static float 실패확률 = 100-UI.현희망;
     public static int A ; // 성공 or 실패 확률 구분 
     public static int B; //특별상소문 일반상소문 구분 일반상소문일 경우 1, 특별상소문은 2, 스토리 상소문일 경우 3
     public static float 게이지; // 불러올게이지
@@ -94,11 +128,9 @@ public class Clipboard : MonoBehaviour
 
     private void Start()
     {
+
+        정무마치기버튼.SetActive(false);
         
-     
-
-
-
 
     }
 
@@ -123,64 +155,87 @@ public class Clipboard : MonoBehaviour
 
     }
 
-    /*public void 엔딩조건() -> update 함수에다 넣기 
+    public void 엔딩조건()
     {
-        if (UI.현침식도==100)
+        if (UI.현침식도 >= 100)
         {
-            배드엔딩씬으로
+            침식도엔딩 = true;
+            gobadending();
+
         }
-        if (UI.현인구<=1000)
+        else if (UI.현인구 <= 1000)
         {
-            배드엔딩씬으로
+            인구엔딩 = true;
+            gobadending();
         }
-        if (UI.현식량==0)
+        else if (UI.현식량 == 0)
         {
-            '''
-
-
-
-        if (
+            식량엔딩 = true;
+            gobadending();
+        }
     }
-    */
-  
+   
+
+
+
+    
+
+    public static void gobadending()
+    {
+            SceneManager.LoadScene("BadEnding");
+    }
+    public static void gogoodending()
+    {
+        SceneManager.LoadScene("GoodEnding");
+    }
+    
     public void 상소문통합함수() //상소문 등장시킬 때 적용할 함수
     {
-       
         int number = dailySSM[상소문count];
-        
-        if (number<=149)
+       
+        print(stagenum);
+        print(number);
+        if (number<=130)
         {
             pickup기본상소문(number);
-           
+            Scinfo1 = GameObject.Find("scriptinfo1").GetComponent<TextMeshProUGUI>();
+            Scinfo1.text = 상소문내용;
+
         }
         else if (number >= 150 && number <= 157)
         {
             pickup스토리상소문(number-150);
-            
+            Scinfo1 = GameObject.Find("scriptinfo1").GetComponent<TextMeshProUGUI>();
+         
+            Scinfo1.text = 스토리내용;
+
         }
         else
         {
             pickup특별상소문(number-200);
-           
+            Scinfo1 = GameObject.Find("scriptinfo1").GetComponent<TextMeshProUGUI>();
+            Scinfo1.text = 상소문내용;
+
         }
-
        
-        
 
 
-        
+
+
+
+
     }
 
-    void Awake() // 초기 한 번만 리스트들 채우기
+  /* void Awake() // 초기 한 번만 리스트들 채우기
     {
        
        
         dailySSM.Clear();
-        for (int i = 0; i < 150 ; i++) // 일반상소문
+        for (int i = 0; i < 130; i++) // 일반상소문
         {
             commonSSM.Add(i);
         }
-        for (int i = 0; i < 7; i++) // 스토리상소문
+        for (int i = 0; i < 8; i++) // 스토리상소문
         {
             storySSM.Add(i + 150);
         }
@@ -188,23 +243,46 @@ public class Clipboard : MonoBehaviour
         {
             specialSSM.Add(i+200);
         }
-
+        
         데일리리스트(); //처음에 한 번 뽑아줌!
-    
+
+      
+       
         
        
 
+    }*/
+
+    public static void 리스트생성()
+    {
+        for (int i = 0; i < 130; i++) // 일반상소문
+        {
+            commonSSM.Add(i);
+        }
+        for (int i = 0; i < 8; i++) // 스토리상소문
+        {
+            storySSM.Add(i + 150);
+        }
+        for (int i = 0; i <= 30; i++)// 특별상소문에서 등장조건이 없는 상소문
+        {
+            specialSSM.Add(i + 200);
+        }
+        데일리리스트();
+        for (int i = 0; i < dailySSM.Count; i++)
+        {
+            print(dailySSM[i]);
+        }
     }
 
 
-    public static void pop(List<int> list1, List<int> list2, int index) 
+    private static void pop(List<int> list1, List<int> list2, int index) 
     {
         int num = list1[index];
         list1.RemoveAt(index);
         list2.Add(num);
     }
 
-    public static void peek(List<int> list1, List<int> list2, int index)
+    private static void peek(List<int> list1, List<int> list2, int index)
     {
         int num = list1[index];
         list2.Add(num);
@@ -219,6 +297,13 @@ public class Clipboard : MonoBehaviour
         story();
         common();
         special();
+       
+       
+
+
+
+
+
 
 
     }
@@ -226,23 +311,103 @@ public class Clipboard : MonoBehaviour
 
     public static void common() // 일반상소문 뽑는 함수 
     {
+        System.Random random = new System.Random();
+        int maxNum = 51;
+        if (stagenum == 1)
+        {
+            maxNum = 50;
+        }
+        if (stagenum == 2)
+        {
+            maxNum = 44;
+        }
+        if (stagenum == 3)
+        {
+            maxNum = 37;
+        }
+        if (stagenum == 4)
+        {
+            maxNum = 30;
+        }
+        if (stagenum == 5)
+        {
+            maxNum = 23;
+        }
+        if (stagenum == 6)
+        {
+            maxNum = 16;
+        }
+        if (stagenum == 7)
+        {
+            maxNum = 66;
+        }
+        if (stagenum == 8)
+        {
+            maxNum = 59;
+        }
+        if (stagenum == 9)
+        {
+            maxNum = 52;
+        }
+        if (stagenum == 10)
+        {
+            maxNum = 45;
+        }
+        if (stagenum == 11)
+        {
+            maxNum = 38;
+        }
+        if (stagenum == 12)
+        {
+            maxNum = 68;
+        }
+        if (stagenum == 13)
+        {
+            maxNum = 61;
+        }
+        if (stagenum == 14)
+        {
+            maxNum = 54;
+        }
+        if (stagenum == 15)
+        {
+            maxNum = 47;
+        }
+        if (stagenum == 16)
+        {
+            maxNum = 40;
+        }
+        if (stagenum == 17)
+        {
+            maxNum = 33;
+        }
+        if (stagenum == 18)
+        {
+            maxNum = 26;
+        }
         if (isExit) // 스토리상소문이 뽑혔으면
         {
             for (int i = 0; i < 6; i++)
             {
-                maxNum = commonSSM.Count;
-                ranNum = Random.Range(0, maxNum);
+
+                int ranNum = random.Next(0, maxNum);
                 pop(commonSSM, dailySSM, ranNum);
+
             }
+
+
+
         }
         else // 안 뽑혔으면
        
         {
             for (int i = 0; i < 7; i++)
             {
-                maxNum = commonSSM.Count;
-                ranNum = Random.Range(0, maxNum);
+
+
+                int ranNum = random.Next(0, maxNum);
                 pop(commonSSM, dailySSM, ranNum);
+
             }
         }
     }
@@ -250,7 +415,7 @@ public class Clipboard : MonoBehaviour
 
     public static void story()//스토리상소문 뽑는 함수 
     {
-        indexNum = -1;
+        int indexNum = -1;
         isExit = false;
 
         if (stagenum == 1)
@@ -391,14 +556,14 @@ public class Clipboard : MonoBehaviour
         상소문내용 = data_Dialog[i]["contents"].ToString(); //string으로
         string lv = data_Dialog[i]["level"].ToString();
         상소문레벨 = int.Parse(lv);
-        string appsucfood = data_Dialog[i]["AppSucFood"].ToString();
+        string appsucfood = data_Dialog[i]["AppFood"].ToString();
         성공시식량 = float.Parse(appsucfood);
-        string appsuchuman = data_Dialog[i]["AppSucHuman"].ToString();
+        string appsuchuman = data_Dialog[i]["AppHuman"].ToString();
         성공시인구 = float.Parse(appsuchuman);//float 형태로 바꾸기
-        string appsucdark = data_Dialog[i]["AppSucDark"].ToString();
+        string appsucdark = data_Dialog[i]["AppDark"].ToString();
        
         성공시침식도 = float.Parse(appsucdark);//float 형태로 바꾸기
-        string appsuchope = data_Dialog[i]["AppSucHope"].ToString();
+        string appsuchope = data_Dialog[i]["AppHope"].ToString();
         성공시희망 = float.Parse(appsuchope);//float 형태로 바꾸기
 
         string rejectfood = data_Dialog[i]["RejectFood"].ToString();
@@ -492,31 +657,38 @@ public class Clipboard : MonoBehaviour
                 if (num == 150)
                 {
                     Sub1 = false;
+                    fail150 = true;
                 }
 
                 else if (num == 151)
                 {
                     RayAlive = false;
+                    fail151 = true;
                 }
                 else if (num == 152)
                 {
                     main1 = false;
+                    fail152 = true;
                 }
                 else if (num == 153)
                 {
                     main2 = false;
+                    fail153 = true;
                 }
                 else if (num == 154)
                 {
                     main3 = false;
+                    fail154 = true;
                 }
                 else if (num == 155)
                 {
                     main4_1 = false;
+                    fail155 = true;
                 }
                 else if (num == 156)
                 {
                     EugeneAlive = false;
+                    fail156 = true;
                 }
 
                
@@ -531,36 +703,44 @@ public class Clipboard : MonoBehaviour
                 if (num == 150)
                 {
                     Sub1 = true;
-
+                    suc150 = true;
+                    
                 }
 
                 else if (num == 151)
                 {
                     RayAlive = true;
+                    suc151 = true;
                 }
                 else if (num == 152)
                 {
                     main1 = true;
                     시간석1 = true;
+                    suc152 = true;
                 }
                 else if (num == 153)
                 {
                     main2 = true;
                     시간석1 = false;
+                    깬시간석1 = true;
+                    suc153 = true;
                 }
                 else if (num == 154)
                 {
                     main3 = true;
                     시간석2 = true;
+                    suc154 = true;
                 }
                 else if (num == 155)
                 {
                     main4_1 = true;
                     시간석3 = true;
+                    suc155 = true;
                 }
                 else if (num == 156)
                 {
                     EugeneAlive = true;
+                    suc156 = true;
                 }
             }
 
@@ -589,6 +769,7 @@ public class Clipboard : MonoBehaviour
                     UI.Handlegage(3, 실패시인구);
                     UI.Handlegage(4, 실패시침식도);
                     Debug.Log("실패");
+                    common2 = true;
 
                 }
                 else
@@ -599,6 +780,7 @@ public class Clipboard : MonoBehaviour
                     UI.Handlegage(3, 성공시인구);
                     UI.Handlegage(4, 성공시침식도);
                     Debug.Log("성공");
+                    common1 = true;
 
 
                 }
@@ -607,21 +789,12 @@ public class Clipboard : MonoBehaviour
         }
         
         상소문count++;
+        print(상소문count);
         Debug.Log(상소문count);
 
 
 
-        if (상소문count==8) //상소문을 8개 처리하면 스테이지가 자동으로 넘어가고 상소문 count는 0이됨 
-        {
-            스크립트진행함수();
-            stagenum++;
-            timecontroller.시간증가();
-            UI.gagemechanism();
-            상소문count = 0;
-            데일리리스트();
-            
-
-        }
+     
 
 
     }
@@ -651,18 +824,26 @@ public class Clipboard : MonoBehaviour
         else if ((stagenum == 11) && (main2 == true))
         {
             go_ScriptScene();
+            시간석2 = false;
+            깬시간석2 = true;
         }
         else if ((stagenum == 14) && (main3 == true))
         {
             go_ScriptScene();
+            시간석3 = false;
+            깬시간석3 = true;
         }
-        else if ((stagenum == 16) && (main4_1 == true))
+       
+        else if (stagenum == 18)
         {
-            go_ScriptScene();
-        }
-        else if (stagenum == 17)
-        {
-            go_ScriptScene();
+            if ((깬시간석1==true)&& (깬시간석2 == true)&& (깬시간석3 == true)&&(EugeneAlive ==true))
+            {
+                go_ScriptScene();
+            }
+            else
+            {
+                gogoodending();
+            }
         }
     }
 
@@ -675,31 +856,39 @@ public class Clipboard : MonoBehaviour
             if (num == 150)
             {
                 Sub1 = false;
+                rej150 = true;
+                
             }
 
             else if (num == 151)
             {
                 RayAlive = false;
+                rej151 = true;
             }
             else if (num == 152)
             {
                 main1 = false;
+                rej152 = true;
             }
             else if (num == 153)
             {
                 main2 = false;
+                rej153 = true;
             }
             else if (num == 154)
             {
                 main3 = false;
+                rej154 = true;
             }
             else if (num == 155)
             {
                 main4_1 = false;
+                rej155 = true;
             }
             else if (num == 156)
             {
                 EugeneAlive = false;
+                rej156 = true;
             }
 
         }
@@ -709,50 +898,74 @@ public class Clipboard : MonoBehaviour
             UI.Handlegage(2, 거절시식량);
             UI.Handlegage(3, 거절시인구);
             UI.Handlegage(4, 거절시침식도);
-
-           
-            상소문count++;
-            Debug.Log(상소문count);
+            
+            if (B==2)
+            {   
+                common3 = true;
+            }
+        
         }
-
-        if (상소문count == 8)
-        {
-            스크립트진행함수();
-            stagenum++;
-            timecontroller.시간증가();
-            UI.gagemechanism();
-            상소문count = 0;
-            데일리리스트();
-           
-
-        }
-
-
+        상소문count++;
+        Debug.Log(상소문count);
     }
 
     public void 정무마치기() // 정무마치기를 눌렀을 시 스테이지가 넘어가면서 스테이지마다 부여되는 게이지 상승값들이 부여됨. // 상소문 count 또한 0으로 초기화가 됨 
     {
+
         스크립트진행함수();
         stagenum++;
         timecontroller.시간증가();
         UI.gagemechanism();
         상소문count = 0;
         데일리리스트();
-       
+        for (int i = 0; i < dailySSM.Count; i++)
+        {
+            print(dailySSM[i]);
+        }
 
-       
-
-    }
+        suc150 = false;
+        fail150 = false;
+        rej150 = false;
+        suc151 = false;
+        fail151 = false;
+        rej151 = false;
+        suc152 = false;
+        fail152 = false;
+        rej152 = false;
+        suc153 = false;
+        fail153 = false;
+        rej153 = false;
+        suc154 = false;
+        fail154 = false;
+        rej154 = false;
+        suc155 = false;
+        fail155 = false;
+        rej155 = false;
+        suc156 = false;
+        fail156 = false;
+        rej156 = false;
+        common1 = false;
+        common2 = false;
+        common3 = false;
+}
 
     void Update()
     {
-       
-        
+        Invoke("버튼활성화", 3f);
+        엔딩조건();
+
     }
 
+    public void 버튼활성화()
+    {
 
-
-
-
-
+        if (상소문count >= 8)
+        {
+            정무마치기버튼.SetActive(true);
+        }
+        else
+        {
+            정무마치기버튼.SetActive(false);
+        }
+    }
 }

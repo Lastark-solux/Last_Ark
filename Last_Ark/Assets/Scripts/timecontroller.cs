@@ -10,11 +10,11 @@ public class timecontroller : MonoBehaviour
 {
     public TextMeshProUGUI timetext;
    
-    public static int year = 2023;
-    public static int month = 1;
+    public static int year = 1054;
+    public static int month =1;
 
 
-    void start ()
+    void Start ()
     {    
         timetext.text = year.ToString()+"³â"+month.ToString()+"¿ù"+"1ÀÏ";
         

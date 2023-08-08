@@ -7,10 +7,10 @@ using UnityEngine;
 public class UI : MonoBehaviour
 {
    
-    public static float 현희망 = 0;
-    public static float 현식량 = 350;
-    public static float 현인구 = 3000;
-    public static float 현침식도 = 3;
+    public static float 현희망 = 50;
+    public static float 현식량 = 500;
+    public static float 현인구 = 30000;
+    public static float 현침식도 = 40;
     
 
 
@@ -98,7 +98,7 @@ public class UI : MonoBehaviour
     {
         if (현인구 <= 10000)
         {
-            현식량 -= 50;
+            현식량 -= 60;
         }
         else if ((10000 < 현인구) && (현인구 <= 30000))
         {
@@ -106,34 +106,34 @@ public class UI : MonoBehaviour
         }
         else if ((30000 < 현인구) && (현인구 <= 50000))
         {
-            현식량 -= 110;
+            현식량 -= 120;
         }
         else if ((50000 < 현인구) && (현인구 <= 70000))
         {
-            현식량 -= 130;
+            현식량 -= 140;
         }
         else if ((70000 < 현인구) && (현인구 <= 90000))
         {
-            현식량 -= 150;
+            현식량 -= 160;
         }
         else
         {
-            현식량 -= 170;
+            현식량 -= 180;
         }
 
 
         if (Clipboard.stagenum<=6)
         {
-            현식량 += 400;
+            현식량 += 80;
         }
         else if ((7 <= Clipboard.stagenum) && (Clipboard.stagenum <= 12))
         {
-            현식량 += 350;
+            현식량 += 100;
 
         }
         else
         {
-            현식량 += 300;
+            현식량 += 120;
         }
         print(현식량);
         print(Clipboard.stagenum);
@@ -143,7 +143,7 @@ public class UI : MonoBehaviour
     {
         if (Clipboard.stagenum <= 6)
         {
-            현침식도 += 3;
+            현침식도 += 4;
         }
         else if ((7 <= Clipboard.stagenum) && (Clipboard.stagenum <= 12))
         {
@@ -152,7 +152,7 @@ public class UI : MonoBehaviour
         }
         else
         {
-            현침식도 += 7;
+            현침식도 += 6;
         }
 
 
@@ -162,23 +162,23 @@ public class UI : MonoBehaviour
         }
         else if ((10000 < 현인구)&& (현인구 <= 30000))
         {
-            현침식도 -= 2;
+            현침식도 -= 1;
         }
         else if ((30000 < 현인구) && (현인구 <= 50000))
         {
-            현침식도 -=3;
+            현침식도 -=2;
         }
         else if ((50000 < 현인구) && (현인구 <= 70000))
         {
-            현침식도  -=  4;
+            현침식도  -=  3;
         }
         else if ((70000 < 현인구) && (현인구 <= 90000))
         {
-            현침식도 -= 5;
+            현침식도 -= 4;
         }
         else
         {
-            현침식도 -= 6;
+            현침식도 -= 5;
         }
 
     }
@@ -187,16 +187,16 @@ public class UI : MonoBehaviour
     {
         if (Clipboard.stagenum <= 6)
         {
-            현인구 += 2000;
+            현인구 += 1000;
         }
         else if ((7 <= Clipboard.stagenum) && (Clipboard.stagenum <= 12))
         {
-            현인구 += 4000;
+            현인구 += 2000;
 
         }
         else
         {
-            현인구 += 5000;
+            현인구 += 3000;
         }
 
     }

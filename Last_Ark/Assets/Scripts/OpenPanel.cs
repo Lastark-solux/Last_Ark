@@ -6,19 +6,25 @@ using DG.Tweening;
 
 public class OpenPanel : MonoBehaviour
 {
-    public RectTransform newsPanel, rockPanel, stampPanel, scriptPanel, Panel; 
-    
+    public RectTransform newsPanel, rockPanel, stampPanel, scriptPanel, Panel;
+    public AudioSource scriptin;
+
+    private void Start()
+    {
+        scriptin = GetComponent<AudioSource>();
+    }
+
     public void PanelBtn(string panelName)
     {
         if (panelName == "News")
         {
-            if (newsPanel.localPosition.x == 715)
+            if (newsPanel.localPosition.x == 640)
             {
-                newsPanel.DOLocalMoveX(55, 2f).SetEase(Ease.OutBack);
+                newsPanel.DOLocalMoveX(70, 2f).SetEase(Ease.OutBack);
             }
-            else if (newsPanel.localPosition.x == 55)
+            else if (newsPanel.localPosition.x == 70)
             {
-                newsPanel.DOLocalMoveX(715, 2f).SetEase(Ease.InBack);
+                newsPanel.DOLocalMoveX(640, 2f).SetEase(Ease.InBack);
             }
         }
 
@@ -36,7 +42,7 @@ public class OpenPanel : MonoBehaviour
 
         else if (panelName == "Stampbox")
         {
-           stampPanel.DOLocalMoveX(323, 2f).SetEase(Ease.OutBack);
+           stampPanel.DOLocalMoveX(323, 1f).SetEase(Ease.OutBack);
         }
 
         else if (panelName == "Quit")
@@ -46,6 +52,7 @@ public class OpenPanel : MonoBehaviour
 
         else if (panelName == "Script")
         {
+            scriptin.Play();
             scriptPanel.DOLocalMoveY(20, 2f).SetEase(Ease.OutBack);
         }
     }
